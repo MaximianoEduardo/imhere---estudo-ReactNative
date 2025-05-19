@@ -5,7 +5,7 @@ export default function HomeScreen() {
 
 
   function handleParticipantAdd() {
-    
+
   }
 
   return (
@@ -20,18 +20,21 @@ export default function HomeScreen() {
         Segunda, 19 de Maio de 2025
       </Text>
 
+      <View style={styles.form}>
+        <TextInput 
+          placeholder="Insira o nome do participante"
+          placeholderTextColor={'#6B6B6B'}
+          style={styles.input} />
 
-      <TextInput 
-        placeholder="Insira o nome do participante"
-        placeholderTextColor={'#6B6B6B'}
-        style={styles.input} />
 
+        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+          <Text style={styles.buttonText}>
+            +
+          </Text>
+        </TouchableOpacity>
+      </View>
 
-      <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-        <Text style={styles.buttonText}>
-          +
-        </Text>
-      </TouchableOpacity>
+      
 
     </View>
 
